@@ -1,0 +1,32 @@
+{
+  "name": "tdd",
+  "version": "1.0.0",
+  "description": "These are my solutions to the Self Learning Clinic Projects - Day 0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harunapopoola/andela-slc-day-0.git"
+  },
+  "keywords": [
+    "Andela",
+    "Self",
+    "Learning",
+    "Clinic",
+    "Bootcamp",
+    "Javascript Testing",
+    "Jasmine"
+  ],
+  "author": "Haruna Popoola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harunapopoola/andela-slc-day-0/issues"
+  },
+  "homepage": "https://github.com/harunapopoola/andela-slc-day-0#readme",
+  "devDependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "dependencies": {}
+}

@@ -2,21 +2,22 @@
 
 var aritGeo = function(arr){
 
-    // return empty string for inavalid input
-    if(arr == null || !Array.isArray(arr)){
+    // return empty string for invalid input
+    if(arr === null || !Array.isArray(arr)){
         return null;
     }
 
 
     var elements_in_arr = arr.length; // no of elements in the array
-    var arit_count = 0, geo_count = 0; // initialize a arit_count, geo_count
+    var arit_count = 0; // initialize  arithmetic count
+    var geo_count = 0; // initialize geometric count
 
     // if the elements in the arr is 0, return 0
     if(elements_in_arr === 0){
         return 0;
     }
 
-    // return empty string if the elements in arr is 1
+    // return -1 if the elements in arr is 1
     if(elements_in_arr === 1){
         return -1;
     }
@@ -26,8 +27,8 @@ var aritGeo = function(arr){
     // get the division for Geometric
     var division = arr[1] / arr[0];
 
-    for(var i = elements_in_arr - 1; i > 0; i--){
-
+    for(var i = 0; i < elements_in_arr; i++){
+        
         // find the arithmetric 
         if((arr[i] - arr[i-1]) === difference){
             arit_count++;

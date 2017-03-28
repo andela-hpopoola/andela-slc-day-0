@@ -2,6 +2,7 @@
 
 // Find the Minimum and Maximum in an array of number
 var findMinMax = function(arr) {
+
 	// Assume first element as largest and smallest
 	var largest = arr[0], smallest = arr[0];
 
@@ -14,11 +15,20 @@ var findMinMax = function(arr) {
 	}
 
 	// Find the smallest and largest
-	for (var i = 1; i < arr.length; i++){
-		if (arr[i] > largest)
+	for (var i = 1; i < total_elements; i++){
+
+		// if current element is greater than the largest variable
+		// make the current element the largest number
+		if (arr[i] > largest){
 			largest = arr[i];
-		if (arr[i] < smallest)
+		}
+
+
+		// if current element is lesser than the smallest variable
+		// make the current element the smallest number
+		if (arr[i] < smallest){
 			smallest = arr[i]
+		}
 	}
 
 	// Return a single value if largest === smallest
